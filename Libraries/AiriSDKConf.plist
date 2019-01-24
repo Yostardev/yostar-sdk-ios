@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>AIRISDK_URL</key>
-	<string>http://test.sdk.azurlane.jp:3001</string>
+	<string>http://test.sdk.a******</string>
 	<key>AIRISDK_PAYSTOREID</key>
 	<string>appstore</string>
 	<key>AIRISDK_SHOWDEBUGLOG</key>
 	<true/>
 	<key>AIRISDK_HSAPIKEY</key>
-	<string>b26868695b3e202689ec866b4bec20c2</string>
+	<string>b26868695b3e20*****c20c2</string>
 	<key>AIRISDK_HSDOMAINNAME</key>
-	<string>yostar.helpshift.com</string>
+	<string>yos*****ft.com</string>
 	<key>AIRISDK_HSAPPID</key>
-	<string>yostar_platform_20181026065702981-ac99a7d161beef7</string>
+	<string>yostar_plat*****2981-ac99a****beef7</string>
 </dict>
 </plist>

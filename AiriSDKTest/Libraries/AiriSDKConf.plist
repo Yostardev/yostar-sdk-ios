@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AIRISDK_URL</key>
+	<string>http://test.sdk.azurlane.jp:3001</string>
+	<key>AIRISDK_PAYSTOREID</key>
+	<string>appstore</string>
+	<key>AIRISDK_SHOWDEBUGLOG</key>
+	<true/>
+	<key>AIRISDK_HSAPIKEY</key>
+	<string>b26868695b3e202689ec866b4bec20c2</string>
+	<key>AIRISDK_HSDOMAINNAME</key>
+	<string>yostar.helpshift.com</string>
+	<key>AIRISDK_HSAPPID</key>
+	<string>yostar_platform_20181026065702981-ac99a7d161beef7</string>
+</dict>
+</plist>

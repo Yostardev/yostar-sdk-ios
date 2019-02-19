@@ -23,8 +23,6 @@
 		3AD864BF21E6ECA500FB7CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD864BE21E6ECA500FB7CA3 /* Assets.xcassets */; };
 		3AD864C221E6ECA500FB7CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD864C021E6ECA500FB7CA3 /* LaunchScreen.storyboard */; };
 		3AD864C521E6ECA500FB7CA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD864C421E6ECA500FB7CA3 /* main.m */; };
-		3AD864CF21E6ECA500FB7CA3 /* AiriSDKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD864CE21E6ECA500FB7CA3 /* AiriSDKTestTests.m */; };
-		3AD864DA21E6ECA500FB7CA3 /* AiriSDKTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD864D921E6ECA500FB7CA3 /* AiriSDKTestUITests.m */; };
 		3AD8656821E6FED800FB7CA3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD8656721E6FED700FB7CA3 /* AdSupport.framework */; };
 		3AD8656A21E6FEE000FB7CA3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD8656921E6FEE000FB7CA3 /* iAd.framework */; };
 		3AD8656C21E6FEEC00FB7CA3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD8656B21E6FEEC00FB7CA3 /* CoreTelephony.framework */; };
@@ -88,11 +86,7 @@
 		3AD864C321E6ECA500FB7CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD864C421E6ECA500FB7CA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AD864CA21E6ECA500FB7CA3 /* AiriSDKTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiriSDKTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AD864CE21E6ECA500FB7CA3 /* AiriSDKTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiriSDKTestTests.m; sourceTree = "<group>"; };
-		3AD864D021E6ECA500FB7CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD864D521E6ECA500FB7CA3 /* AiriSDKTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiriSDKTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AD864D921E6ECA500FB7CA3 /* AiriSDKTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AiriSDKTestUITests.m; sourceTree = "<group>"; };
-		3AD864DB21E6ECA500FB7CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD8656721E6FED700FB7CA3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3AD8656921E6FEE000FB7CA3 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		3AD8656B21E6FEEC00FB7CA3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -188,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				3AD864B421E6ECA300FB7CA3 /* AiriSDKTest */,
-				3AD864CD21E6ECA500FB7CA3 /* AiriSDKTestTests */,
-				3AD864D821E6ECA500FB7CA3 /* AiriSDKTestUITests */,
 				3AD864B321E6ECA300FB7CA3 /* Products */,
 				3AD8656621E6FED700FB7CA3 /* Frameworks */,
 			);
@@ -223,24 +215,6 @@
 				3AD864C421E6ECA500FB7CA3 /* main.m */,
 			);
 			path = AiriSDKTest;
-			sourceTree = "<group>";
-		};
-		3AD864CD21E6ECA500FB7CA3 /* AiriSDKTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				3AD864CE21E6ECA500FB7CA3 /* AiriSDKTestTests.m */,
-				3AD864D021E6ECA500FB7CA3 /* Info.plist */,
-			);
-			path = AiriSDKTestTests;
-			sourceTree = "<group>";
-		};
-		3AD864D821E6ECA500FB7CA3 /* AiriSDKTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3AD864D921E6ECA500FB7CA3 /* AiriSDKTestUITests.m */,
-				3AD864DB21E6ECA500FB7CA3 /* Info.plist */,
-			);
-			path = AiriSDKTestUITests;
 			sourceTree = "<group>";
 		};
 		3AD8656621E6FED700FB7CA3 /* Frameworks */ = {
@@ -421,7 +395,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD864CF21E6ECA500FB7CA3 /* AiriSDKTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +402,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD864DA21E6ECA500FB7CA3 /* AiriSDKTestUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

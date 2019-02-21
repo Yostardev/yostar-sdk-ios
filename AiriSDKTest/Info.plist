@@ -23,7 +23,7 @@
 			<string>facebook-unity-sdk</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb962529950581548</string>
+				<string>fb320756295138009</string>
 			</array>
 		</dict>
 		<dict>
@@ -38,7 +38,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>962529950581548</string>
+	<string>320756295138009</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>twitter</string>

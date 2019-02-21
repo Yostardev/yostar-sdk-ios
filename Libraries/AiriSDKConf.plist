@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AIRISDK_URL</key>
-	<string>http://test.sdk.azurlane.jp:3001</string>
+	<string>http://test.sdk.azurlane.jp:3011</string>
 	<key>AIRISDK_PAYSTOREID</key>
 	<string>appstore</string>
 	<key>AIRISDK_SHOWDEBUGLOG</key>

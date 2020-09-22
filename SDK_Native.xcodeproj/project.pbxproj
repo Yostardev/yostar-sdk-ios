@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A1B095124FF87AA00D91A30 /* check.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B095024FF87A900D91A30 /* check.sh */; };
+		3A0675D92519EA39004E3F3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0675D82519EA39004E3F3E /* MapKit.framework */; };
 		3A1DC17924FCF99C00F8854C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A886FC724FCE4CE00B88C8F /* libresolv.tbd */; };
 		3A1DC17B24FCF9B200F8854C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC17A24FCF9B200F8854C /* WebKit.framework */; };
 		3A1DC18124FDE93700F8854C /* InputInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DC17F24FDE93700F8854C /* InputInfoViewController.m */; };
@@ -64,7 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A1B095024FF87A900D91A30 /* check.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = check.sh; sourceTree = SOURCE_ROOT; };
+		3A0675D82519EA39004E3F3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A1DC17824FCF98C00F8854C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3A1DC17A24FCF9B200F8854C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3A1DC17E24FDE93700F8854C /* InputInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputInfoViewController.h; sourceTree = "<group>"; };
@@ -146,6 +146,7 @@
 				3AEC368E251879AF00F3D0B7 /* MQTTFramework.framework in Frameworks */,
 				3A4B400D24FCC21F000F7AED /* GoogleAppMeasurement.framework in Frameworks */,
 				3A4B400F24FCC21F000F7AED /* FirebaseRemoteConfig.framework in Frameworks */,
+				3A0675D92519EA39004E3F3E /* MapKit.framework in Frameworks */,
 				3A1DC17B24FCF9B200F8854C /* WebKit.framework in Frameworks */,
 				3A4B3EEF24FCABB4000F7AED /* CoreSpotlight.framework in Frameworks */,
 				3A4B400824FCC21F000F7AED /* FBSDKCoreKit.framework in Frameworks */,
@@ -186,6 +187,7 @@
 		3A4B3ECF24FCAA9F000F7AED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A0675D82519EA39004E3F3E /* MapKit.framework */,
 				3A1DC18A24FE228A00F8854C /* AppTrackingTransparency.framework */,
 				3A1DC18824FE227F00F8854C /* StoreKit.framework */,
 				3A1DC17A24FCF9B200F8854C /* WebKit.framework */,
@@ -281,7 +283,6 @@
 		3ACA438D24FCA7C7002F75CF /* SDK_Native */ = {
 			isa = PBXGroup;
 			children = (
-				3A1B095024FF87A900D91A30 /* check.sh */,
 				3A886FC324FCDBFB00B88C8F /* GoogleService-Info.plist */,
 				3A4B3EF624FCC21F000F7AED /* YostarSDK */,
 				3A4B3ED624FCAAE8000F7AED /* SDK_Native.entitlements */,
@@ -363,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5DBA8A24FCC5B400B4DFDA /* Info.plist in Resources */,
-				3A1B095124FF87AA00D91A30 /* check.sh in Resources */,
 				3A886FC424FCDBFB00B88C8F /* GoogleService-Info.plist in Resources */,
 				3AD2C7FA2506397D000CFA42 /* LogViewController.xib in Resources */,
 				3ACA439E24FCA7C8002F75CF /* LaunchScreen.storyboard in Resources */,

@@ -17,15 +17,14 @@ Pod::Spec.new do |spec|
 
   spec.name         = "AiriSDK"
   spec.version      = "2.1.42"
-  spec.summary      = "A short description of AiriSDK."
+  spec.summary      = "AiriSDK is Yostar SDK"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = " AiriSDK is a static library "
 
   spec.homepage     = "https://github.com/Yostardev/yostar-sdk-ios"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Yostardev/yostar-sdk-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Yostardev/yostar-sdk-ios.git", :tag => spec.version }
   spec.vendored_frameworks = 'yostar-sdk-ios/YostarSDK/'
 
 
@@ -121,7 +120,7 @@ Pod::Spec.new do |spec|
    spec.frameworks = "AdSupport", "AppTrackingTransparency", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "CoreLocation", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
 
   # spec.library   = "iconv"
-   spec.libraries = "libsqlite3", "libicucore", "libz", "libresolv"
+   spec.libraries = "sqlite3", "icucore", "z", "resolv"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1B095124FF87AA00D91A30 /* check.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B095024FF87A900D91A30 /* check.sh */; };
+		3A1DC17924FCF99C00F8854C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A886FC724FCE4CE00B88C8F /* libresolv.tbd */; };
+		3A1DC17B24FCF9B200F8854C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC17A24FCF9B200F8854C /* WebKit.framework */; };
+		3A1DC18124FDE93700F8854C /* InputInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DC17F24FDE93700F8854C /* InputInfoViewController.m */; };
+		3A1DC18224FDE93700F8854C /* InputInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1DC18024FDE93700F8854C /* InputInfoViewController.xib */; };
+		3A1DC18924FE228000F8854C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC18824FE227F00F8854C /* StoreKit.framework */; };
+		3A4B3ED124FCAAA0000F7AED /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED024FCAAA0000F7AED /* AdSupport.framework */; };
+		3A4B3ED324FCAAA5000F7AED /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED224FCAAA5000F7AED /* iAd.framework */; };
+		3A4B3ED524FCAAB2000F7AED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED424FCAAB2000F7AED /* CoreTelephony.framework */; };
+		3A4B3ED824FCAB13000F7AED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED724FCAB12000F7AED /* CoreGraphics.framework */; };
+		3A4B3EDA24FCAB1B000F7AED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED924FCAB1B000F7AED /* QuartzCore.framework */; };
+		3A4B3EDC24FCAB23000F7AED /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EDB24FCAB23000F7AED /* CoreText.framework */; };
+		3A4B3EDE24FCAB2C000F7AED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EDD24FCAB2C000F7AED /* SystemConfiguration.framework */; };
+		3A4B3EE124FCAB3B000F7AED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EE024FCAB3B000F7AED /* UIKit.framework */; };
+		3A4B3EE524FCAB89000F7AED /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EE424FCAB89000F7AED /* libz.tbd */; };
+		3A4B3EE724FCAB91000F7AED /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EE624FCAB91000F7AED /* Security.framework */; };
+		3A4B3EE924FCAB9A000F7AED /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EE824FCAB9A000F7AED /* QuickLook.framework */; };
+		3A4B3EEB24FCABA2000F7AED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EEA24FCABA2000F7AED /* CoreLocation.framework */; };
+		3A4B3EED24FCABAA000F7AED /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EEC24FCABAA000F7AED /* MobileCoreServices.framework */; };
+		3A4B3EEF24FCABB4000F7AED /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EEE24FCABB4000F7AED /* CoreSpotlight.framework */; };
+		3A4B400324FCC21F000F7AED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3F7D24FCC21F000F7AED /* FBSDKLoginKit.framework */; };
+		3A4B400424FCC21F000F7AED /* ElvaChatServiceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B3F7E24FCC21F000F7AED /* ElvaChatServiceSDK.bundle */; };
+		3A4B400724FCC21F000F7AED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B3F8224FCC21F000F7AED /* GoogleService-Info.plist */; };
+		3A4B400824FCC21F000F7AED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3F8324FCC21F000F7AED /* FBSDKCoreKit.framework */; };
+		3A4B400C24FCC21F000F7AED /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FB824FCC21F000F7AED /* GoogleDataTransport.framework */; };
+		3A4B400D24FCC21F000F7AED /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FB924FCC21F000F7AED /* GoogleAppMeasurement.framework */; };
+		3A4B400E24FCC21F000F7AED /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FBA24FCC21F000F7AED /* FirebaseCore.framework */; };
+		3A4B400F24FCC21F000F7AED /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FBB24FCC21F000F7AED /* FirebaseRemoteConfig.framework */; };
+		3A4B401024FCC21F000F7AED /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FBC24FCC21F000F7AED /* FirebaseAnalytics.framework */; };
+		3A4B401124FCC21F000F7AED /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FBD24FCC21F000F7AED /* GoogleUtilities.framework */; };
+		3A4B401224FCC21F000F7AED /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FBE24FCC21F000F7AED /* PromisesObjC.framework */; };
+		3A4B401324FCC21F000F7AED /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FBF24FCC21F000F7AED /* nanopb.framework */; };
+		3A4B401424FCC21F000F7AED /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FC024FCC21F000F7AED /* FirebaseInstallations.framework */; };
+		3A4B401524FCC21F000F7AED /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FC124FCC21F000F7AED /* FirebaseABTesting.framework */; };
+		3A4B401624FCC21F000F7AED /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FC224FCC21F000F7AED /* FIRAnalyticsConnector.framework */; };
+		3A4B401724FCC21F000F7AED /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3FC324FCC21F000F7AED /* FirebaseCoreDiagnostics.framework */; };
+		3A5DBA8A24FCC5B400B4DFDA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA439F24FCA7C8002F75CF /* Info.plist */; };
+		3A886FC424FCDBFB00B88C8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A886FC324FCDBFB00B88C8F /* GoogleService-Info.plist */; };
+		3A886FC624FCE3A700B88C8F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A886FC524FCE3A700B88C8F /* CoreMotion.framework */; };
+		3A886FCA24FCE85C00B88C8F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EF424FCAC15000F7AED /* SafariServices.framework */; };
+		3ACA439024FCA7C7002F75CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA438F24FCA7C7002F75CF /* AppDelegate.m */; };
+		3ACA439624FCA7C7002F75CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA439524FCA7C7002F75CF /* ViewController.m */; };
+		3ACA439924FCA7C7002F75CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA439724FCA7C7002F75CF /* Main.storyboard */; };
+		3ACA439B24FCA7C8002F75CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA439A24FCA7C8002F75CF /* Assets.xcassets */; };
+		3ACA439E24FCA7C8002F75CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA439C24FCA7C8002F75CF /* LaunchScreen.storyboard */; };
+		3ACA43A124FCA7C8002F75CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA43A024FCA7C8002F75CF /* main.m */; };
+		3AD2C7F52505D94C000CFA42 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3AD2C7F42505D94C000CFA42 /* README.md */; };
+		3AD2C7F92506397D000CFA42 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2C7F72506397D000CFA42 /* LogViewController.m */; };
+		3AD2C7FA2506397D000CFA42 /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD2C7F82506397D000CFA42 /* LogViewController.xib */; };
+		3AEC36452514AE2100F3D0B7 /* libYostarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEC36442514AE2100F3D0B7 /* libYostarSDK.a */; };
+		3AEC364A2514AEA500F3D0B7 /* YostarSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC36482514AEA500F3D0B7 /* YostarSwift.swift */; };
+		3AEC368D251879AF00F3D0B7 /* ElvaChatServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEC368B251879AF00F3D0B7 /* ElvaChatServiceSDK.framework */; };
+		3AEC368E251879AF00F3D0B7 /* MQTTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEC368C251879AF00F3D0B7 /* MQTTFramework.framework */; };
+		3AF834BF2509CC5400C66B38 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3EEA24FCABA2000F7AED /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1B095024FF87A900D91A30 /* check.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = check.sh; sourceTree = SOURCE_ROOT; };
+		3A1DC17824FCF98C00F8854C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3A1DC17A24FCF9B200F8854C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3A1DC17E24FDE93700F8854C /* InputInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputInfoViewController.h; sourceTree = "<group>"; };
+		3A1DC17F24FDE93700F8854C /* InputInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputInfoViewController.m; sourceTree = "<group>"; };
+		3A1DC18024FDE93700F8854C /* InputInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputInfoViewController.xib; sourceTree = "<group>"; };
+		3A1DC18824FE227F00F8854C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3A1DC18A24FE228A00F8854C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		3A4B3ED024FCAAA0000F7AED /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3A4B3ED224FCAAA5000F7AED /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		3A4B3ED424FCAAB2000F7AED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3A4B3ED624FCAAE8000F7AED /* SDK_Native.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDK_Native.entitlements; sourceTree = "<group>"; };
+		3A4B3ED724FCAB12000F7AED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A4B3ED924FCAB1B000F7AED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3A4B3EDB24FCAB23000F7AED /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3A4B3EDD24FCAB2C000F7AED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3A4B3EE024FCAB3B000F7AED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A4B3EE324FCAB50000F7AED /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		3A4B3EE424FCAB89000F7AED /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3A4B3EE624FCAB91000F7AED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3A4B3EE824FCAB9A000F7AED /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		3A4B3EEA24FCABA2000F7AED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A4B3EEC24FCABAA000F7AED /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3A4B3EEE24FCABB4000F7AED /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		3A4B3EF024FCABBE000F7AED /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3A4B3EF224FCABC7000F7AED /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		3A4B3EF424FCAC15000F7AED /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		3A4B3F7D24FCC21F000F7AED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		3A4B3F7E24FCC21F000F7AED /* ElvaChatServiceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ElvaChatServiceSDK.bundle; sourceTree = "<group>"; };
+		3A4B3F8024FCC21F000F7AED /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		3A4B3F8224FCC21F000F7AED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A4B3F8324FCC21F000F7AED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		3A4B3FB824FCC21F000F7AED /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = "<group>"; };
+		3A4B3FB924FCC21F000F7AED /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		3A4B3FBA24FCC21F000F7AED /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		3A4B3FBB24FCC21F000F7AED /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
+		3A4B3FBC24FCC21F000F7AED /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		3A4B3FBD24FCC21F000F7AED /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		3A4B3FBE24FCC21F000F7AED /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		3A4B3FBF24FCC21F000F7AED /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		3A4B3FC024FCC21F000F7AED /* FirebaseInstallations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstallations.framework; sourceTree = "<group>"; };
+		3A4B3FC124FCC21F000F7AED /* FirebaseABTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseABTesting.framework; sourceTree = "<group>"; };
+		3A4B3FC224FCC21F000F7AED /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		3A4B3FC324FCC21F000F7AED /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		3A886FC324FCDBFB00B88C8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A886FC524FCE3A700B88C8F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3A886FC724FCE4CE00B88C8F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		3ACA438B24FCA7C7002F75CF /* SDK_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACA438E24FCA7C7002F75CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3ACA438F24FCA7C7002F75CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3ACA439424FCA7C7002F75CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3ACA439524FCA7C7002F75CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3ACA439824FCA7C7002F75CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ACA439A24FCA7C8002F75CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ACA439D24FCA7C8002F75CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ACA439F24FCA7C8002F75CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACA43A024FCA7C8002F75CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AD2C7F42505D94C000CFA42 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3AD2C7F62506397D000CFA42 /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		3AD2C7F72506397D000CFA42 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		3AD2C7F82506397D000CFA42 /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
+		3AEC36442514AE2100F3D0B7 /* libYostarSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYostarSDK.a; sourceTree = "<group>"; };
+		3AEC36462514AEA500F3D0B7 /* SDK_Native-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDK_Native-Bridging-Header.h"; sourceTree = "<group>"; };
+		3AEC36472514AEA500F3D0B7 /* YostarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YostarSDK.h; sourceTree = "<group>"; };
+		3AEC36482514AEA500F3D0B7 /* YostarSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YostarSwift.swift; sourceTree = "<group>"; };
+		3AEC36492514AEA500F3D0B7 /* YostarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YostarAppDelegate.h; sourceTree = "<group>"; };
+		3AEC368B251879AF00F3D0B7 /* ElvaChatServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElvaChatServiceSDK.framework; sourceTree = "<group>"; };
+		3AEC368C251879AF00F3D0B7 /* MQTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MQTTFramework.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ACA438824FCA7C7002F75CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1DC18924FE228000F8854C /* StoreKit.framework in Frameworks */,
+				3A4B3ED524FCAAB2000F7AED /* CoreTelephony.framework in Frameworks */,
+				3A4B3ED124FCAAA0000F7AED /* AdSupport.framework in Frameworks */,
+				3AEC368D251879AF00F3D0B7 /* ElvaChatServiceSDK.framework in Frameworks */,
+				3AEC368E251879AF00F3D0B7 /* MQTTFramework.framework in Frameworks */,
+				3A4B400D24FCC21F000F7AED /* GoogleAppMeasurement.framework in Frameworks */,
+				3A4B400F24FCC21F000F7AED /* FirebaseRemoteConfig.framework in Frameworks */,
+				3A1DC17B24FCF9B200F8854C /* WebKit.framework in Frameworks */,
+				3A4B3EEF24FCABB4000F7AED /* CoreSpotlight.framework in Frameworks */,
+				3A4B400824FCC21F000F7AED /* FBSDKCoreKit.framework in Frameworks */,
+				3A4B401224FCC21F000F7AED /* PromisesObjC.framework in Frameworks */,
+				3A4B3EED24FCABAA000F7AED /* MobileCoreServices.framework in Frameworks */,
+				3A4B401324FCC21F000F7AED /* nanopb.framework in Frameworks */,
+				3A4B3EEB24FCABA2000F7AED /* CoreLocation.framework in Frameworks */,
+				3A4B3EE924FCAB9A000F7AED /* QuickLook.framework in Frameworks */,
+				3A4B3EE724FCAB91000F7AED /* Security.framework in Frameworks */,
+				3A4B400E24FCC21F000F7AED /* FirebaseCore.framework in Frameworks */,
+				3A4B3EE524FCAB89000F7AED /* libz.tbd in Frameworks */,
+				3AEC36452514AE2100F3D0B7 /* libYostarSDK.a in Frameworks */,
+				3A4B401424FCC21F000F7AED /* FirebaseInstallations.framework in Frameworks */,
+				3A4B401624FCC21F000F7AED /* FIRAnalyticsConnector.framework in Frameworks */,
+				3A4B3EDA24FCAB1B000F7AED /* QuartzCore.framework in Frameworks */,
+				3A4B3EE124FCAB3B000F7AED /* UIKit.framework in Frameworks */,
+				3A886FC624FCE3A700B88C8F /* CoreMotion.framework in Frameworks */,
+				3A4B3EDE24FCAB2C000F7AED /* SystemConfiguration.framework in Frameworks */,
+				3A4B401124FCC21F000F7AED /* GoogleUtilities.framework in Frameworks */,
+				3A4B400C24FCC21F000F7AED /* GoogleDataTransport.framework in Frameworks */,
+				3A4B401524FCC21F000F7AED /* FirebaseABTesting.framework in Frameworks */,
+				3A1DC17924FCF99C00F8854C /* libresolv.tbd in Frameworks */,
+				3A886FCA24FCE85C00B88C8F /* SafariServices.framework in Frameworks */,
+				3A4B3ED824FCAB13000F7AED /* CoreGraphics.framework in Frameworks */,
+				3A4B401024FCC21F000F7AED /* FirebaseAnalytics.framework in Frameworks */,
+				3A4B400324FCC21F000F7AED /* FBSDKLoginKit.framework in Frameworks */,
+				3A4B3EDC24FCAB23000F7AED /* CoreText.framework in Frameworks */,
+				3A4B3ED524FCAAB2000F7AED /* CoreTelephony.framework in Frameworks */,
+				3AF834BF2509CC5400C66B38 /* CoreLocation.framework in Frameworks */,
+				3A4B401724FCC21F000F7AED /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				3A4B3ED324FCAAA5000F7AED /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A4B3ECF24FCAA9F000F7AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A1DC18A24FE228A00F8854C /* AppTrackingTransparency.framework */,
+				3A1DC18824FE227F00F8854C /* StoreKit.framework */,
+				3A1DC17A24FCF9B200F8854C /* WebKit.framework */,
+				3A1DC17824FCF98C00F8854C /* libsqlite3.tbd */,
+				3A886FC724FCE4CE00B88C8F /* libresolv.tbd */,
+				3A886FC524FCE3A700B88C8F /* CoreMotion.framework */,
+				3A4B3EF424FCAC15000F7AED /* SafariServices.framework */,
+				3A4B3EF224FCABC7000F7AED /* Photos.framework */,
+				3A4B3EF024FCABBE000F7AED /* WebKit.framework */,
+				3A4B3EEE24FCABB4000F7AED /* CoreSpotlight.framework */,
+				3A4B3EEC24FCABAA000F7AED /* MobileCoreServices.framework */,
+				3A4B3EEA24FCABA2000F7AED /* CoreLocation.framework */,
+				3A4B3EE824FCAB9A000F7AED /* QuickLook.framework */,
+				3A4B3EE624FCAB91000F7AED /* Security.framework */,
+				3A4B3EE424FCAB89000F7AED /* libz.tbd */,
+				3A4B3EE324FCAB50000F7AED /* libicucore.tbd */,
+				3A4B3EE024FCAB3B000F7AED /* UIKit.framework */,
+				3A4B3EDD24FCAB2C000F7AED /* SystemConfiguration.framework */,
+				3A4B3EDB24FCAB23000F7AED /* CoreText.framework */,
+				3A4B3ED924FCAB1B000F7AED /* QuartzCore.framework */,
+				3A4B3ED724FCAB12000F7AED /* CoreGraphics.framework */,
+				3A4B3ED424FCAAB2000F7AED /* CoreTelephony.framework */,
+				3A4B3ED224FCAAA5000F7AED /* iAd.framework */,
+				3A4B3ED024FCAAA0000F7AED /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A4B3EF624FCC21F000F7AED /* YostarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3AEC36492514AEA500F3D0B7 /* YostarAppDelegate.h */,
+				3AEC36472514AEA500F3D0B7 /* YostarSDK.h */,
+				3AEC36482514AEA500F3D0B7 /* YostarSwift.swift */,
+				3AEC36442514AE2100F3D0B7 /* libYostarSDK.a */,
+				3A4B3F7C24FCC21F000F7AED /* ThirdPath */,
+				3AEC36462514AEA500F3D0B7 /* SDK_Native-Bridging-Header.h */,
+			);
+			path = YostarSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		3A4B3F7C24FCC21F000F7AED /* ThirdPath */ = {
+			isa = PBXGroup;
+			children = (
+				3AEC368B251879AF00F3D0B7 /* ElvaChatServiceSDK.framework */,
+				3AEC368C251879AF00F3D0B7 /* MQTTFramework.framework */,
+				3A4B3FB724FCC21F000F7AED /* Analytics */,
+				3A4B3F7E24FCC21F000F7AED /* ElvaChatServiceSDK.bundle */,
+				3A4B3F8324FCC21F000F7AED /* FBSDKCoreKit.framework */,
+				3A4B3F7D24FCC21F000F7AED /* FBSDKLoginKit.framework */,
+				3A4B3F8024FCC21F000F7AED /* Firebase.h */,
+				3A4B3F8224FCC21F000F7AED /* GoogleService-Info.plist */,
+			);
+			path = ThirdPath;
+			sourceTree = "<group>";
+		};
+		3A4B3FB724FCC21F000F7AED /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				3A4B3FB824FCC21F000F7AED /* GoogleDataTransport.framework */,
+				3A4B3FB924FCC21F000F7AED /* GoogleAppMeasurement.framework */,
+				3A4B3FBA24FCC21F000F7AED /* FirebaseCore.framework */,
+				3A4B3FBB24FCC21F000F7AED /* FirebaseRemoteConfig.framework */,
+				3A4B3FBC24FCC21F000F7AED /* FirebaseAnalytics.framework */,
+				3A4B3FBD24FCC21F000F7AED /* GoogleUtilities.framework */,
+				3A4B3FBE24FCC21F000F7AED /* PromisesObjC.framework */,
+				3A4B3FBF24FCC21F000F7AED /* nanopb.framework */,
+				3A4B3FC024FCC21F000F7AED /* FirebaseInstallations.framework */,
+				3A4B3FC124FCC21F000F7AED /* FirebaseABTesting.framework */,
+				3A4B3FC224FCC21F000F7AED /* FIRAnalyticsConnector.framework */,
+				3A4B3FC324FCC21F000F7AED /* FirebaseCoreDiagnostics.framework */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		3ACA438224FCA7C7002F75CF = {
+			isa = PBXGroup;
+			children = (
+				3ACA438D24FCA7C7002F75CF /* SDK_Native */,
+				3ACA438C24FCA7C7002F75CF /* Products */,
+				3A4B3ECF24FCAA9F000F7AED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3ACA438C24FCA7C7002F75CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA438B24FCA7C7002F75CF /* SDK_Native.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ACA438D24FCA7C7002F75CF /* SDK_Native */ = {
+			isa = PBXGroup;
+			children = (
+				3A1B095024FF87A900D91A30 /* check.sh */,
+				3A886FC324FCDBFB00B88C8F /* GoogleService-Info.plist */,
+				3A4B3EF624FCC21F000F7AED /* YostarSDK */,
+				3A4B3ED624FCAAE8000F7AED /* SDK_Native.entitlements */,
+				3ACA438E24FCA7C7002F75CF /* AppDelegate.h */,
+				3ACA438F24FCA7C7002F75CF /* AppDelegate.m */,
+				3ACA439424FCA7C7002F75CF /* ViewController.h */,
+				3ACA439524FCA7C7002F75CF /* ViewController.m */,
+				3ACA439724FCA7C7002F75CF /* Main.storyboard */,
+				3ACA439A24FCA7C8002F75CF /* Assets.xcassets */,
+				3ACA439C24FCA7C8002F75CF /* LaunchScreen.storyboard */,
+				3ACA439F24FCA7C8002F75CF /* Info.plist */,
+				3ACA43A024FCA7C8002F75CF /* main.m */,
+				3A1DC17E24FDE93700F8854C /* InputInfoViewController.h */,
+				3A1DC17F24FDE93700F8854C /* InputInfoViewController.m */,
+				3A1DC18024FDE93700F8854C /* InputInfoViewController.xib */,
+				3AD2C7F42505D94C000CFA42 /* README.md */,
+				3AD2C7F62506397D000CFA42 /* LogViewController.h */,
+				3AD2C7F72506397D000CFA42 /* LogViewController.m */,
+				3AD2C7F82506397D000CFA42 /* LogViewController.xib */,
+			);
+			path = SDK_Native;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ACA438A24FCA7C7002F75CF /* SDK_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ACA43A424FCA7C8002F75CF /* Build configuration list for PBXNativeTarget "SDK_Native" */;
+			buildPhases = (
+				3ACA438724FCA7C7002F75CF /* Sources */,
+				3ACA438824FCA7C7002F75CF /* Frameworks */,
+				3ACA438924FCA7C7002F75CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDK_Native;
+			productName = SDK_Native;
+			productReference = 3ACA438B24FCA7C7002F75CF /* SDK_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ACA438324FCA7C7002F75CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					3ACA438A24FCA7C7002F75CF = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = 3ACA438624FCA7C7002F75CF /* Build configuration list for PBXProject "SDK_Native" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ACA438224FCA7C7002F75CF;
+			productRefGroup = 3ACA438C24FCA7C7002F75CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ACA438A24FCA7C7002F75CF /* SDK_Native */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ACA438924FCA7C7002F75CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5DBA8A24FCC5B400B4DFDA /* Info.plist in Resources */,
+				3A1B095124FF87AA00D91A30 /* check.sh in Resources */,
+				3A886FC424FCDBFB00B88C8F /* GoogleService-Info.plist in Resources */,
+				3AD2C7FA2506397D000CFA42 /* LogViewController.xib in Resources */,
+				3ACA439E24FCA7C8002F75CF /* LaunchScreen.storyboard in Resources */,
+				3ACA439B24FCA7C8002F75CF /* Assets.xcassets in Resources */,
+				3A1DC18224FDE93700F8854C /* InputInfoViewController.xib in Resources */,
+				3ACA439924FCA7C7002F75CF /* Main.storyboard in Resources */,
+				3A4B400424FCC21F000F7AED /* ElvaChatServiceSDK.bundle in Resources */,
+				3AD2C7F52505D94C000CFA42 /* README.md in Resources */,
+				3A4B400724FCC21F000F7AED /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ACA438724FCA7C7002F75CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1DC18124FDE93700F8854C /* InputInfoViewController.m in Sources */,
+				3AD2C7F92506397D000CFA42 /* LogViewController.m in Sources */,
+				3ACA439624FCA7C7002F75CF /* ViewController.m in Sources */,
+				3AEC364A2514AEA500F3D0B7 /* YostarSwift.swift in Sources */,
+				3ACA439024FCA7C7002F75CF /* AppDelegate.m in Sources */,
+				3ACA43A124FCA7C8002F75CF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3ACA439724FCA7C7002F75CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ACA439824FCA7C7002F75CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ACA439C24FCA7C8002F75CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ACA439D24FCA7C8002F75CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ACA43A224FCA7C8002F75CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3ACA43A324FCA7C8002F75CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ACA43A524FCA7C8002F75CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SDK_Native/SDK_Native.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42D597HQZL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/Analytics",
+					"$(PROJECT_DIR)/SDK_Native",
+				);
+				INFOPLIST_FILE = SDK_Native/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/TwitterKit",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/TwitterCore",
+					"$(PROJECT_DIR)/YostarSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoStarEN.Arknights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YostarSDK/SDK_Native-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ACA43A624FCA7C8002F75CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SDK_Native/SDK_Native.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42D597HQZL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/Analytics",
+					"$(PROJECT_DIR)/SDK_Native",
+				);
+				INFOPLIST_FILE = SDK_Native/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/TwitterKit",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/TwitterCore",
+					"$(PROJECT_DIR)/YostarSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoStarEN.Arknights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YostarSDK/SDK_Native-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ACA438624FCA7C7002F75CF /* Build configuration list for PBXProject "SDK_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ACA43A224FCA7C8002F75CF /* Debug */,
+				3ACA43A324FCA7C8002F75CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ACA43A424FCA7C8002F75CF /* Build configuration list for PBXNativeTarget "SDK_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ACA43A524FCA7C8002F75CF /* Debug */,
+				3ACA43A624FCA7C8002F75CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ACA438324FCA7C7002F75CF /* Project object */;
+}

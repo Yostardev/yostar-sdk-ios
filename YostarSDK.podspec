@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YostarSDK"
-  spec.version      = "2.1.42"
+  spec.version      = "2.1.43"
   spec.summary      = "YostarSDK is a static library"
 
   # This description is used to generate tags and improve search results.
@@ -91,10 +91,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "YostarSDK/*.h", "YostarSDK/YostarSwift.swift"
+  spec.source_files  = "YostarSDK/*.h"
   # spec.exclude_files = "Classes/Exclude"
 
-   spec.public_header_files = "YostarSDK/*.h", "YostarSDK/YostarSwift.swift"
+   spec.public_header_files = "YostarSDK/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

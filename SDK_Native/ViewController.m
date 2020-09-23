@@ -80,7 +80,9 @@
 - (IBAction)initSDkAction:(UIButton *)sender {
     NSLog(@"current selector --> %@",NSStringFromSelector(_cmd));
     //初始化需要替换成自己的服务器
-    SDKInit([@"http://test.sdk.azurlane.jp:3011" UTF8String], [@"appstore" UTF8String], true);
+//https://passport.arknights.global:443
+//http://test.sdk.azurlane.jp:3011
+    SDKInit([@"https://passport.arknights.global:443" UTF8String], [@"appstore" UTF8String], true);
 }
 - (IBAction)buyAction:(UIButton *)sender {
     //参数需要替换成自己的商品id和环境

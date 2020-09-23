@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A0675D92519EA39004E3F3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0675D82519EA39004E3F3E /* MapKit.framework */; };
+		3A067639251A0C27004E3F3E /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A067638251A0C27004E3F3E /* TwitterKitResources.bundle */; };
 		3A1DC17924FCF99C00F8854C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A886FC724FCE4CE00B88C8F /* libresolv.tbd */; };
 		3A1DC17B24FCF9B200F8854C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC17A24FCF9B200F8854C /* WebKit.framework */; };
 		3A1DC18124FDE93700F8854C /* InputInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DC17F24FDE93700F8854C /* InputInfoViewController.m */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		3A0675D82519EA39004E3F3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A067638251A0C27004E3F3E /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		3A1DC17824FCF98C00F8854C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3A1DC17A24FCF9B200F8854C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3A1DC17E24FDE93700F8854C /* InputInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputInfoViewController.h; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 		3A4B3F7C24FCC21F000F7AED /* ThirdPath */ = {
 			isa = PBXGroup;
 			children = (
+				3A067638251A0C27004E3F3E /* TwitterKitResources.bundle */,
 				3AEC368B251879AF00F3D0B7 /* ElvaChatServiceSDK.framework */,
 				3AEC368C251879AF00F3D0B7 /* MQTTFramework.framework */,
 				3A4B3FB724FCC21F000F7AED /* Analytics */,
@@ -371,6 +374,7 @@
 				3A1DC18224FDE93700F8854C /* InputInfoViewController.xib in Resources */,
 				3ACA439924FCA7C7002F75CF /* Main.storyboard in Resources */,
 				3A4B400424FCC21F000F7AED /* ElvaChatServiceSDK.bundle in Resources */,
+				3A067639251A0C27004E3F3E /* TwitterKitResources.bundle in Resources */,
 				3AD2C7F52505D94C000CFA42 /* README.md in Resources */,
 				3A4B400724FCC21F000F7AED /* GoogleService-Info.plist in Resources */,
 			);

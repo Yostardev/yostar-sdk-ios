@@ -15,16 +15,16 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "AiriSDK"
+  spec.name         = "YostarSDK"
   spec.version      = "2.1.42"
-  spec.summary      = "AiriSDK is Yostar SDK"
+  spec.summary      = "YostarSDK is a static library"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = " AiriSDK is a static library "
+  spec.description  = " YostarSDK is a static library,Helps you build projects quickly "
 
   spec.homepage     = "https://github.com/Yostardev/yostar-sdk-ios"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "huxiaohui" => "xiaohui.hu@yo-star.com" }
+  spec.author             = { "Yostar" => "xiaohui.hu@yo-star.com" }
   # Or just: spec.author    = "huxiaohui"
   # spec.authors            = { "huxiaohui" => "xiaohui.hu@yo-star.com" }
   # spec.social_media_url   = "https://twitter.com/huxiaohui"
@@ -78,8 +78,9 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Yostardev/yostar-sdk-ios.git", :tag => spec.version }
-  spec.vendored_frameworks = 'yostar-sdk-ios/YostarSDK/'
+  spec.source       = { :git => "https://github.com/Yostardev/yostar-sdk-ios.git", :tag => "#{spec.version}" }
+   spec.vendored_frameworks = 'YostarSDK/ThirdPath/*.framework', "YostarSDK/ThirdPath/Analytics/*.framework"
+   spec.vendored_libraries = "YostarSDK/libYostarSDK.a"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +91,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "yostar-sdk-ios/YostarSDK/**/*.{h,m}"
+  spec.source_files  = "YostarSDK/YostarSDK.h"
   # spec.exclude_files = "Classes/Exclude"
 
-   spec.public_header_files = "yostar-sdk-ios/YostarSDK/**/*.h"
+   spec.public_header_files = "YostarSDK/YostarSDK.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,7 +106,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+   spec.resources = "YostarSDK/ThirdPath/*.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -133,5 +134,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  spec.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
 
 end

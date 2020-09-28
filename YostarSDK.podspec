@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YostarSDK"
-  spec.version      = "2.1.43"
+  spec.version      = "2.1.45"
   spec.summary      = "YostarSDK is a static library"
 
   # This description is used to generate tags and improve search results.

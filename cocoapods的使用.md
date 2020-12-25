@@ -51,7 +51,14 @@
     ```
        pod repo update
     ```
-
+12. 删除cocoapods本地的库索引
+    ```
+        rm ~/Library/Caches/CocoaPods/search_index.json
+    ```
+13. 重新建立库索引
+    ```
+        pod search sdk名
+    ```
 
 
 

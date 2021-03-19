@@ -20,11 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)YostarAIHelpInitForApiKey:(NSString *)apiKey domainName:(NSString *)domainName appID:(NSString *)appID;
 + (BOOL)YostarApplication:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options;
 + (void)Yostar:(UIViewController *)rootViewController didReceiveRemoteNotification:(NSDictionary *)userInfo;
-+ (void)YostarAiHelpDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+//+ (void)YostarAiHelpDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 
 
-// Adjust
-+ (void)YostarAdjustDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+// 获取到远程推送的devicetoken
++ (void)YostarDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 
 + (void)YostarApplicationDidBecomeActive;
 

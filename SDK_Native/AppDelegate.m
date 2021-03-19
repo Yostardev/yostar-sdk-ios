@@ -34,8 +34,7 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-    [YostarAppDelegate YostarAiHelpDidRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [YostarAppDelegate YostarAdjustDidRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [YostarAppDelegate YostarDidRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YostarSDK"
-  spec.version      = "2.1.47"
+  spec.version      = "2.1.50"
   spec.summary      = "YostarSDK is a static library"
 
   # This description is used to generate tags and improve search results.
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-   spec.frameworks = "AdSupport", "AppTrackingTransparency", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "CoreLocation", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
+   spec.frameworks = "Accelerate", "AdSupport", "AudioToolbox", "AppTrackingTransparency", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
 
   # spec.library   = "iconv"
    spec.libraries = "sqlite3", "icucore", "z", "resolv"
@@ -134,6 +134,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
+  spec.xcconfig = { "OTHER_LDFLAGS" => ["-ObjC", "-lc++"] }
 
 end

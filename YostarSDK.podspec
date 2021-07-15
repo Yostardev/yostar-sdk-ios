@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YostarSDK"
-  spec.version      = "2.1.50"
+  spec.version      = "2.1.52"
   spec.summary      = "YostarSDK is a static library"
 
   # This description is used to generate tags and improve search results.
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-   spec.frameworks = "Accelerate", "AdSupport", "AudioToolbox", "AppTrackingTransparency", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
+   spec.frameworks = "Accelerate", "AdSupport", "AudioToolbox", "AdServices:Optional", "AppTrackingTransparency", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
 
   # spec.library   = "iconv"
    spec.libraries = "sqlite3", "icucore", "z", "resolv"

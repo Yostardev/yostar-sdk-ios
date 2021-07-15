@@ -13,7 +13,7 @@
 		3A1DC17B24FCF9B200F8854C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC17A24FCF9B200F8854C /* WebKit.framework */; };
 		3A1DC18124FDE93700F8854C /* InputInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DC17F24FDE93700F8854C /* InputInfoViewController.m */; };
 		3A1DC18224FDE93700F8854C /* InputInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1DC18024FDE93700F8854C /* InputInfoViewController.xib */; };
-		3A1DC18924FE228000F8854C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC18824FE227F00F8854C /* StoreKit.framework */; };
+		3A1DC18924FE228000F8854C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1DC18824FE227F00F8854C /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3A4B3ED124FCAAA0000F7AED /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED024FCAAA0000F7AED /* AdSupport.framework */; };
 		3A4B3ED324FCAAA5000F7AED /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED224FCAAA5000F7AED /* iAd.framework */; };
 		3A4B3ED524FCAAB2000F7AED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4B3ED424FCAAB2000F7AED /* CoreTelephony.framework */; };

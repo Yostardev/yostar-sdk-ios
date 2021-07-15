@@ -6,6 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
 
 extern void SDKInit(const char *strURL, const char *strPayStoreID, bool bIsShowDebugLog);
 extern int UpdateUnityToken(const char *token ,const char *uid);
@@ -89,8 +92,19 @@ extern void SDKValidateAccount(const char *strVerificationCode);
 extern void SDKResetAccountPW(const char *strAccount, const char *strNewPW, const char *strVerificationCode);
 // ************* end ******************
 typedef void(^YostarSDKCallBack)(NSString *result);
-@interface YostarSDK : NSObject
 
+
+@protocol YostarPushDelegate <NSObject>
+@optional
+- (void)yoStarUserNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler API_AVAILABLE(ios(10.0));
+- (void)yoStarUserNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
+API_AVAILABLE(ios(10.0));
+
+@end
+
+
+@interface YostarSDK : NSObject
+@property (nonatomic, weak) id <YostarPushDelegate> pushDelegate;
 @property (nonatomic, copy) NSString *baseURL;
 @property (nonatomic, copy) NSString *payStoreId;
 @property (nonatomic, copy) NSString *twKey;
@@ -99,5 +113,5 @@ typedef void(^YostarSDKCallBack)(NSString *result);
 @property (nonatomic, copy) YostarSDKCallBack SDKCallBack;
 // 管理单例
 + (instancetype)yostarShareton;
-
+- (void)registerPushDelegate:(id)delegate;
 @end

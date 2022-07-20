@@ -1,7 +1,7 @@
 //
 //  YostarSDK.h
 //  YostarSDK
-//  V2.1.6
+//  V2.1.65
 //  Created by Yostar on 2018/7/12.
 //
 
@@ -17,6 +17,10 @@ extern int UpdateUnityToken(const char *token ,const char *uid);
 extern void SDKLogin(int platform, const char *param, const char *param2, bool bIsCreateNewAccount);
 extern void SDKLink(int platform, const char *strEmail, const char *strVerificationCode);
 extern void SDKUnlink(int platform, const char *strEmail, const char *strVerificationCode);
+///除GooglePlayGames解绑的其他第三方账号解绑时
+///如果code返回PLAY_GAME_ACCOUNT_UNLNK_WARN
+///可调用ConfirmUnLinkGooglePlayGame强制解绑；
+extern void SDKConfirmUnLinkGooglePlayGame(void);
 extern void SDKTranscodeReq(void);
 extern void SDKSetBirth(const char *strBirth);
 extern char *SDKGetDeviceID(void);
@@ -76,6 +80,12 @@ extern void SDKServerToServer(const char *devToken, const char *linkID, const ch
 
 // 系统剪切板
 extern int SDKToClipboard(const char *cValue);
+/**
+ 问卷调查
+ @param activityID 问卷ID
+ @param gameUID 游戏中用户的ID
+ */
+extern void ShowSurvey(const char *activityID, const char *gameUID);
 
 // 判断系统版本是否大于iOS 13
 extern bool SDKSystemVerAvailable(void);
@@ -109,6 +119,11 @@ API_AVAILABLE(ios(10.0));
 @property (nonatomic, copy) NSString *payStoreId;
 @property (nonatomic, copy) NSString *twKey;
 @property (nonatomic, copy) NSString *twSecret;
+/**
+ YES 发起客诉，进入机器人客服界面，点击【人工客服】，进入人工客服界面
+ NO 发起客诉，进入FAQ页面，点击【人工客服】，进入人工客服界面
+ */
+@property (nonatomic, assign) BOOL aihelpModel;
 
 @property (nonatomic, copy) YostarSDKCallBack SDKCallBack;
 // 管理单例

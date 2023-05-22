@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YostarAppDelegate : NSObject
 
-+ (void)YostarApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
++ (void)YostarApplication:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 
 
@@ -25,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 获取到远程推送的devicetoken
 + (void)YostarDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+
++ (void)yoSDKApplication:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
++ (void)yoSDKApplication:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo;
 
 + (void)YostarApplicationDidBecomeActive;
 

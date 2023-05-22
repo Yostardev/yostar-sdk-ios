@@ -1,7 +1,7 @@
 //
 //  YostarSDK.h
 //  YostarSDK
-//  V2.1.65
+//  V2.1.66
 //  Created by Yostar on 2018/7/12.
 //
 
@@ -11,6 +11,8 @@
 #endif
 
 extern void SDKInit(const char *strURL, const char *strPayStoreID, bool bIsShowDebugLog);
+///实名认证
+extern void SDKCert(void);
 extern int UpdateUnityToken(const char *token ,const char *uid);
 // 继承码登录时 param -- > transcode; param2 --> uid
 // yostar登录时 param -- > strEmail; param2 --> strVerificationCode
@@ -84,8 +86,9 @@ extern int SDKToClipboard(const char *cValue);
  问卷调查
  @param activityID 问卷ID
  @param gameUID 游戏中用户的ID
+ @param gameNotifyURL 游戏通知地址
  */
-extern void ShowSurvey(const char *activityID, const char *gameUID);
+extern void ShowSurvey(const char *activityID, const char *gameUID, const char *gameNotifyURL);
 
 // 判断系统版本是否大于iOS 13
 extern bool SDKSystemVerAvailable(void);
@@ -119,6 +122,7 @@ API_AVAILABLE(ios(10.0));
 @property (nonatomic, copy) NSString *payStoreId;
 @property (nonatomic, copy) NSString *twKey;
 @property (nonatomic, copy) NSString *twSecret;
+@property (nonatomic, copy) NSString *twClientID;
 /**
  YES 发起客诉，进入机器人客服界面，点击【人工客服】，进入人工客服界面
  NO 发起客诉，进入FAQ页面，点击【人工客服】，进入人工客服界面
@@ -129,4 +133,5 @@ API_AVAILABLE(ios(10.0));
 // 管理单例
 + (instancetype)yostarShareton;
 - (void)registerPushDelegate:(id)delegate;
+- (void)callBackUnity:(id)result;
 @end

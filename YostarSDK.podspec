@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YostarSDK"
-  spec.version      = "2.1.65"
+  spec.version      = "2.4.1"
   spec.summary      = "YostarSDK is a static library"
 
   # This description is used to generate tags and improve search results.
@@ -79,8 +79,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :git => "https://github.com/Yostardev/yostar-sdk-ios.git", :tag => "#{spec.version}" }
-   spec.vendored_frameworks = 'YostarSDK/ThirdPath/*.framework', "YostarSDK/ThirdPath/Analytics/*.framework"
-   spec.vendored_libraries = "YostarSDK/libYostarSDK.a"
+   spec.vendored_frameworks = 'YostarSDK/**/*.framework'
+   spec.vendored_libraries = "YostarSDK/**/*.a"
+   spec.static_framework = true
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -106,7 +107,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-   spec.resources = "YostarSDK/ThirdPath/*.bundle"
+   spec.resources = "YostarSDK/**/*.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -118,7 +119,9 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-   spec.frameworks = "Accelerate", "AdSupport", "AudioToolbox", "AppTrackingTransparency", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
+   spec.frameworks = "Accelerate", "AdSupport", "AudioToolbox", "StoreKit", "MapKit", "CoreMotion", "iAd", "CoreTelephony", "CoreGraphics", "QuartzCore", "CoreText", "SystemConfiguration", "CoreTelephony", "UIKit", "Security", "QuickLook", "MobileCoreServices", "CoreSpotlight", "Photos", "WebKit", "SafariServices"
+
+  spec.weak_frameworks = "AppTrackingTransparency", "AdServices"
 
   # spec.library   = "iconv"
    spec.libraries = "sqlite3", "icucore", "z", "resolv"

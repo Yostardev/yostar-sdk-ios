@@ -82,7 +82,7 @@
     //初始化需要替换成自己的服务器
 //https://passport.arknights.global:443
 //http://test.sdk.azurlane.jp:3011
-    SDKInit([@"https://passport.arknights.global:443" UTF8String], [@"appstore" UTF8String], true);
+    SDKInit([@"https://passporttest.arknights.global:9093" UTF8String], [@"appstore" UTF8String], true);
 }
 - (IBAction)buyAction:(UIButton *)sender {
     //参数需要替换成自己的商品id和环境

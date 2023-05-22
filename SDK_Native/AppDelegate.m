@@ -23,7 +23,7 @@
     //apikey
     //domainName
     //appid
-    [YostarAppDelegate YostarAIHelpInitForApiKey:@"YOSTAR_app_59d69b706fdb43d6b51c43a907b61fbb" domainName:@"yostar@aihelp.net" appID:@"yostar_platform_4d06213b-51c0-4b03-881f-425fd1e3aa76"];
+    [YostarAppDelegate YostarAIHelpInitForApiKey:@"YOSTAR_app_85e52116cbb649cf8665a5d947852c0b" domainName:@"yostar.aihelp.net" appID:@"yostar_platform_0e9057d5577680b17751f5b1a60c746f"];
     return YES;
 }
 

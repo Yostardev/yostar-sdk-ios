@@ -40,7 +40,7 @@ extern void SDKClearAccount(void);
 extern void SDKNewAccountLink(void);
 extern void QuickLogin(void);
 // account -- > strEmail; strVerificationCode --> strVerificationCode
-extern void SDKAccountRegister(const char *account, const char *strVerificationCode);
+//extern void SDKAccountRegister(const char *account, const char *strVerificationCode) NS_UNAVAILABLE;
 extern void SDKRegsitLink(const char *strEmail, const char *strVerificationCode);
 extern void SDKVerificationCodeReq(const char *strEmail);
 
@@ -79,6 +79,8 @@ extern void SDKConifrmShopAgreement(void);
 
 // SDKServerToServer
 extern void SDKServerToServer(const char *devToken, const char *linkID, const char *appEventName, const char *priceValue, const char *currencyCode);
+//获取SDK的版本号
+extern const char * SDKGetSDKVersion(void);
 
 // 系统剪切板
 extern int SDKToClipboard(const char *cValue);

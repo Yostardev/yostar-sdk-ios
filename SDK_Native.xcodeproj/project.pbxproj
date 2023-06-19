@@ -41,6 +41,8 @@
 		3AD2C7F92506397D000CFA42 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2C7F72506397D000CFA42 /* LogViewController.m */; };
 		3AD2C7FA2506397D000CFA42 /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD2C7F82506397D000CFA42 /* LogViewController.xib */; };
 		3AEC36452514AE2100F3D0B7 /* libYostarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEC36442514AE2100F3D0B7 /* libYostarSDK.a */; };
+		A84D703B2A40089700E9E8EB /* GTCaptcha4.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A84D70392A40089600E9E8EB /* GTCaptcha4.bundle */; };
+		A84D703C2A40089700E9E8EB /* GTCaptcha4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84D703A2A40089600E9E8EB /* GTCaptcha4.framework */; };
 		A88F29C72A1B17B5008D5FC8 /* AIHelpSupportSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A88F29AF2A1B17B4008D5FC8 /* AIHelpSupportSDK.bundle */; };
 		A88F29C82A1B17B5008D5FC8 /* AIHelpSupportSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88F29B02A1B17B4008D5FC8 /* AIHelpSupportSDK.framework */; };
 		A88F29C92A1B17B5008D5FC8 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88F29B22A1B17B4008D5FC8 /* Protobuf.framework */; };
@@ -119,6 +121,8 @@
 		3AEC36442514AE2100F3D0B7 /* libYostarSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYostarSDK.a; sourceTree = "<group>"; };
 		3AEC36472514AEA500F3D0B7 /* YostarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YostarSDK.h; sourceTree = "<group>"; };
 		3AEC36492514AEA500F3D0B7 /* YostarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YostarAppDelegate.h; sourceTree = "<group>"; };
+		A84D70392A40089600E9E8EB /* GTCaptcha4.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GTCaptcha4.bundle; sourceTree = "<group>"; };
+		A84D703A2A40089600E9E8EB /* GTCaptcha4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTCaptcha4.framework; sourceTree = "<group>"; };
 		A88F29AF2A1B17B4008D5FC8 /* AIHelpSupportSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AIHelpSupportSDK.bundle; sourceTree = "<group>"; };
 		A88F29B02A1B17B4008D5FC8 /* AIHelpSupportSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AIHelpSupportSDK.framework; sourceTree = "<group>"; };
 		A88F29B22A1B17B4008D5FC8 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				A88F29D52A1B17B5008D5FC8 /* FIRAnalyticsConnector.framework in Frameworks */,
 				3AEC36452514AE2100F3D0B7 /* libYostarSDK.a in Frameworks */,
 				3A4B3EDA24FCAB1B000F7AED /* QuartzCore.framework in Frameworks */,
+				A84D703C2A40089700E9E8EB /* GTCaptcha4.framework in Frameworks */,
 				A88F29CC2A1B17B5008D5FC8 /* FirebaseCore.framework in Frameworks */,
 				3A4B3EE124FCAB3B000F7AED /* UIKit.framework in Frameworks */,
 				3A886FC624FCE3A700B88C8F /* CoreMotion.framework in Frameworks */,
@@ -244,6 +249,7 @@
 		3A4B3F7C24FCC21F000F7AED /* ThirdPath */ = {
 			isa = PBXGroup;
 			children = (
+				A84D70382A40089600E9E8EB /* GTCaptcha */,
 				A88F29AE2A1B17B4008D5FC8 /* AIHELP */,
 				A88F29B12A1B17B4008D5FC8 /* Analytics */,
 				A88F29C12A1B17B5008D5FC8 /* Facebook */,
@@ -298,6 +304,15 @@
 				A88F29DD2A1B18A7008D5FC8 /* Empty.swift */,
 			);
 			path = SDK_Native;
+			sourceTree = "<group>";
+		};
+		A84D70382A40089600E9E8EB /* GTCaptcha */ = {
+			isa = PBXGroup;
+			children = (
+				A84D70392A40089600E9E8EB /* GTCaptcha4.bundle */,
+				A84D703A2A40089600E9E8EB /* GTCaptcha4.framework */,
+			);
+			path = GTCaptcha;
 			sourceTree = "<group>";
 		};
 		A88F29AE2A1B17B4008D5FC8 /* AIHELP */ = {
@@ -409,6 +424,7 @@
 				3ACA439924FCA7C7002F75CF /* Main.storyboard in Resources */,
 				A88F29C72A1B17B5008D5FC8 /* AIHelpSupportSDK.bundle in Resources */,
 				3AC9C718260486E700F26BD2 /* YostarSDKResources.bundle in Resources */,
+				A84D703B2A40089700E9E8EB /* GTCaptcha4.bundle in Resources */,
 				3A067639251A0C27004E3F3E /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +598,7 @@
 					"$(PROJECT_DIR)/SDK_Native",
 					"$(PROJECT_DIR)/YostarSDK/ThirdPath/AIHELP",
 					"$(PROJECT_DIR)/YostarSDK/ThirdPath/Facebook",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/GTCaptcha",
 				);
 				INFOPLIST_FILE = SDK_Native/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -634,6 +651,7 @@
 					"$(PROJECT_DIR)/SDK_Native",
 					"$(PROJECT_DIR)/YostarSDK/ThirdPath/AIHELP",
 					"$(PROJECT_DIR)/YostarSDK/ThirdPath/Facebook",
+					"$(PROJECT_DIR)/YostarSDK/ThirdPath/GTCaptcha",
 				);
 				INFOPLIST_FILE = SDK_Native/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

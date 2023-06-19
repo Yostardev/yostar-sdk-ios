@@ -99,7 +99,7 @@
     ShowAiHelpFAQs([@"1.0.3" UTF8String], [@"serverId1" UTF8String], [@"huxiaohuiroleUid1" UTF8String], [@"huxiaohuiroleName1" UTF8String], [nowStr UTF8String], 10000, [tagStr UTF8String]);
 }
 - (IBAction)accountRegisterAction:(UIButton *)sender {
-    SDKAccountRegister([@"" UTF8String], [@"" UTF8String]);
+//    SDKAccountRegister([@"" UTF8String], [@"" UTF8String]);
 }
 
 - (IBAction)registerBindAction:(UIButton *)sender {
